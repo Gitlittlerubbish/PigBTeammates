@@ -7,8 +7,7 @@ execute_process(COMMAND git rev-parse --short HEAD OUTPUT_VARIABLE GIT_COMMITID 
 SET(PROJECT_VERSION ${SDK_VERSION}_${GIT_COMMITID}_${COMPILE_DATE})
 message("-- PROJECT_VERSION +++++++++++++++++++ ${PROJECT_VERSION}")
 
-add_library()
-
+add_subdirectory(src/message)
 
 
 
