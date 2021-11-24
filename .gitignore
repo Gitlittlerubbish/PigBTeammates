@@ -1,5 +1,5 @@
 # vscode misc
-.vscode/*
+.vscode/
 
 # Mac misc
 .DS_Store
