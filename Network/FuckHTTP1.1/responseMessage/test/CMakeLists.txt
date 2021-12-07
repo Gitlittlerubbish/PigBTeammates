@@ -1,5 +1,4 @@
-
-add_compile_options(-L-usr/local/lib64)
+add_subdirectory(../../googletest exclude_from_all)
 add_executable(test_rspmsg main.cpp)
-target_include_directories(test_rspmsg PUBLIC ${PROJECT_SOURCE_DIR}/include)
-target_link_libraries(test_rspmsg rsp_msg gtest gtest_main pthread)
+target_link_libraries(test_rspmsg rsp_msg gtest_main)
+add_test(test_rspmsg test_rspmsg)
